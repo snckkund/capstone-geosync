@@ -1,1 +1,1 @@
-# capstone-geosync
+# capstone-geosynta
