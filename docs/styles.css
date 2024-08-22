@@ -9,26 +9,96 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 0; /* Add padding for visual spacing */
+    position: relative; /* Ensure header positioning is relative */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    filter: brightness(1.2) contrast(1.3) saturate(1.5); /* Adjust these values for vibrancy */
+}
+
+/* Navigation styling */
+nav {
+    position: relative; /* Ensure positioning for the menu */
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Align navigation items horizontally */
+    gap: 20px; /* Add space between items */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
+    padding: 8px 16px; /* Add padding for clickable area */
+    border-radius: 4px; /* Optional: Add a slight border radius */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+/* Toggle button styling */
+.navbar-toggle {
+    display: none; /* Hide toggle button by default */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+}
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide menu items on small screens */
+        flex-direction: column;
+        gap: 10px; /* Add space between menu items */
+        width: auto; /* Adjust width to fit content */
+        text-align: center;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px; /* Adjust position to drop down from toggle button */
+        right: 20px; /* Align with the toggle button */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+        z-index: 1000; /* Ensure menu is above other content */
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu items when menu is active */
+    }
+
+    .navbar-toggle {
+        display: flex; /* Show toggle button on small screens */
+    }
 }
 
 main {

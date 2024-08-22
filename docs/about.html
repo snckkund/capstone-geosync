@@ -3,32 +3,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | GEOSYNC</title>
+    <title>About Us | GEOSYNTA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>GEOSYNC</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="working.html">Working</a></li>
-                <li><a href="methodology.html">Methodology</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="/docs/site-assets/geosynta-T.png" alt="GEOSYNTA Logo">
+            </a>
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="working.html">Working</a></li>
+                    <li><a href="methodology.html">Methodology</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
     
     <main>
         <section id="about-us">
             <h2>About Us</h2>
-            <p>Welcome to GEOSYNC, a project dedicated to advancing geospatial synchronization and climate trend prediction. Our team of experts is passionate about leveraging cutting-edge technology to address climate change challenges.</p>
+            <p>Welcome to GEOSYNTA, a project dedicated to advancing geospatial synchronization and trend analysis. Our team of experts is passionate about leveraging cutting-edge technology to address climate change challenges.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 GEOSYNC Team</p>
+        <p>&copy; 2024 GEOSYNTA Team</p>
     </footer>
 </body>
 </html>

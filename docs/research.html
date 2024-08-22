@@ -3,22 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | GEOSYNC</title>
+    <title>Research | GEOSYNTA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>GEOSYNC</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="working.html">Working</a></li>
-                <li><a href="methodology.html">Methodology</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="/docs/site-assets/geosynta-T.png" alt="GEOSYNTA Logo">
+            </a>
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="working.html">Working</a></li>
+                    <li><a href="methodology.html">Methodology</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
     
     <main>
         <section id="research">
@@ -28,7 +38,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 GEOSYNC Team</p>
+        <p>&copy; 2024 GEOSYNTA Team</p>
     </footer>
 </body>
 </html>
